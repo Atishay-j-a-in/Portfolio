@@ -61,55 +61,57 @@ function MobileWhiteboard({ theme, onToggleTheme }: { theme: "light" | "dark"; o
   return (
     <div className="mobile-whiteboard">
       <header className="mobile-chrome">
-        <span className="font-hand text-3xl">Excalidraw-ish portfolio</span>
+        <span className="font-hand text-3xl">Portfolio</span>
         <button type="button" onClick={onToggleTheme}>{theme === "dark" ? "Light" : "Dark"}</button>
       </header>
       <section className="mobile-hero sketch-mobile-card">
         <p className="font-hand text-2xl text-accent">Hey, I&apos;m</p>
         <h1 className="font-hand text-7xl leading-none text-ink">{profile.name}</h1>
         <p className="mt-5 text-lg leading-8 text-body">{profile.headline}</p>
-        <div className="mt-6 flex flex-wrap gap-3 font-hand text-xl">
-          <a href="#mobile-projects" className="mobile-button filled">Projects</a>
-          <a href={profile.resume} className="mobile-button">Resume</a>
-        </div>
-      </section>
-
-      <section className="sketch-mobile-card rotate-[-1deg]">
-        <h2 className="font-hand text-5xl text-ink">About me</h2>
-        <p className="mt-4 leading-7 text-body">I build full-stack products with clean architecture, useful AI, readable APIs, and a habit of sketching systems first.</p>
+        <p className="mt-3 font-hand text-xl text-accent">• {profile.seeking}</p>
       </section>
 
       <section id="mobile-projects" className="grid gap-5">
         <h2 className="font-hand text-5xl text-ink">Featured Projects ↓</h2>
         {projects.map((project, index) => (
-          <article key={project.name} className="sketch-mobile-card" style={{ transform: `rotate(${index % 2 ? 1 : -1}deg)` }}>
-            <h3 className="font-hand text-4xl text-ink">{project.name}</h3>
-            <p className="mt-3 leading-7 text-body">{project.description}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.stack.map((chip) => <span key={chip} className="mobile-chip">{chip}</span>)}
-            </div>
-          </article>
+          <a
+            key={project.name}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <article className="sketch-mobile-card" style={{ transform: `rotate(${index % 2 ? 1 : -1}deg)` }}>
+              <div className="flex items-center justify-between">
+                <h3 className="font-hand text-4xl text-ink group-hover:text-accent transition-colors">{project.name}</h3>
+                <span className="font-hand text-2xl">↗</span>
+              </div>
+              <p className="mt-3 leading-7 text-body">{project.description}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.stack.map((chip) => <span key={chip} className="mobile-chip">{chip}</span>)}
+              </div>
+            </article>
+          </a>
         ))}
       </section>
 
-      <section className="sketch-mobile-card rotate-[1deg]">
-        <h2 className="font-hand text-5xl text-ink">Architecture sketch</h2>
-        <p className="mt-4 font-hand text-3xl leading-relaxed text-ink">React → Next.js → Node → Postgres → Redis → Docker → AWS</p>
-      </section>
-
-      <section className="grid gap-5">
-        <h2 className="font-hand text-5xl text-ink">Notes, pins, commits</h2>
-        <div className="sketch-mobile-card"><strong>Blog:</strong> {blogs.slice(0, 2).map((b) => b.title).join(" / ")}</div>
-        <div className="sketch-mobile-card"><strong>Certificates:</strong> {certificates.slice(0, 3).join(" / ")}</div>
-        <div className="sketch-mobile-card"><strong>Repos:</strong> {repositories.slice(0, 4).join(" / ")}</div>
-      </section>
-
       <section className="sketch-mobile-card rotate-[-1deg]">
-        <h2 className="font-hand text-5xl text-ink">Contact</h2>
+        <h2 className="font-hand text-5xl text-ink">Last note</h2>
         <div className="mt-5 grid gap-3 font-hand text-2xl text-ink">
           <a href={`mailto:${profile.email}`}>email → {profile.email}</a>
-          <a href={profile.github} target="_blank" rel="noopener noreferrer">github → @Atishay-j-a-in</a>
-          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">linkedin → /in/atishay-jain-920326324</a>
+          <a href={profile.github} target="_blank" rel="noopener noreferrer">github → @Atishay-j-a-in ↗</a>
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">linkedin → /in/atishay-jain-920326324 ↗</a>
+        </div>
+        <div className="mt-6">
+          <a
+            href={profile.resume}
+            download="Atishay_Jain_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-button filled inline-block"
+          >
+            Download Resume ▧
+          </a>
         </div>
       </section>
     </div>
