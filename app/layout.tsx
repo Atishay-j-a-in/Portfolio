@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: "%s | Atishay Jain",
   },
   description:
-    "Atishay Jain builds fast, modern websites in React, Next.js, Node.js, Express and MongoDB. Available for freelance website projects, landing pages, full-stack apps, and software intern roles. NSUT Delhi, Class of 2028.",
+    "Atishay Jain builds fast websites in React, Next.js & MERN. Freelance projects, landing pages & full-stack apps. NSUT Delhi 2028.",
   keywords: [
     "Atishay Jain",
     "Atishay Jain portfolio",
@@ -68,13 +68,13 @@ export const metadata: Metadata = {
     siteName: "Atishay Jain — Portfolio",
     title: "Atishay Jain — Freelance Website Builder & MERN Developer",
     description:
-      "I build fast websites, landing pages and full-stack apps in React, Next.js and MERN. Open to freelance projects and software internships.",
+      "Freelance websites, landing pages & MERN apps in React and Next.js. Open to freelance work and internships.",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Atishay Jain — Full Stack Developer",
+        alt: "Atishay Jain, freelance website builder and full stack developer — portfolio cover showing React, Next.js and MERN skills",
       },
     ],
   },

@@ -66,7 +66,7 @@ function MobileWhiteboard({ theme, onToggleTheme }: { theme: "light" | "dark"; o
       </header>
       <section className="mobile-hero sketch-mobile-card">
         <p className="font-hand text-2xl text-accent">Hey, I&apos;m</p>
-        <h1 className="font-hand text-7xl leading-none text-ink">{profile.name}</h1>
+        <h2 className="font-hand text-7xl leading-none text-ink">{profile.name}</h2>
         <p className="mt-5 text-lg leading-8 text-body">{profile.headline}</p>
         <p className="mt-3 font-hand text-xl text-accent">• {profile.seeking}</p>
       </section>

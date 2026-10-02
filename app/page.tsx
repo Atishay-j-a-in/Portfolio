@@ -5,7 +5,7 @@ import { blogs, certificates, profile, projects } from "@/data/content";
 export const metadata: Metadata = {
   title: "Atishay Jain — Freelance Website Builder & MERN Developer",
   description:
-    "Hire Atishay Jain for freelance websites, landing pages and MERN apps (React, Next.js, Node, MongoDB). NSUT Delhi CS 2028. Open to freelance projects and software internships.",
+    "Hire Atishay Jain for freelance websites & MERN apps in React and Next.js. NSUT Delhi 2028. Open to freelance + internships.",
   alternates: { canonical: "https://atishayjain.engineer/" },
 };
 
@@ -16,10 +16,12 @@ export default function Home() {
           Visually hidden but present in HTML so bots that don't run
           the canvas JS still read who Atishay Jain is and what he offers. */}
       <div className="sr-only">
-        <h1>
-          Atishay Jain — Freelance Website Builder & Full Stack Developer
-          (MERN)
-        </h1>
+        <p>
+          <strong>
+            Atishay Jain — Freelance Website Builder & Full Stack Developer
+            (MERN)
+          </strong>
+        </p>
         <p>
           {profile.headline} {profile.seeking} Based in Delhi, India, studying
           Computer Science at Netaji Subhas University of Technology (Class of
@@ -66,7 +68,7 @@ export default function Home() {
 
       <noscript>
         <main>
-          <h1>Atishay Jain — Freelance Website Builder</h1>
+          <p>Atishay Jain — Freelance Website Builder</p>
           <p>
             I build websites in React, Next.js and MERN. Contact
             shepherdk450@gmail.com for freelance work or internships.
