@@ -71,10 +71,10 @@ export const metadata: Metadata = {
       "I build fast websites, landing pages and full-stack apps in React, Next.js and MERN. Open to freelance projects and software internships.",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Atishay Jain — Freelance Website Builder & MERN Developer",
+        alt: "Atishay Jain — Full Stack Developer",
       },
     ],
   },
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: "Atishay Jain — Freelance Website Builder & MERN Developer",
     description:
       "Freelance websites, landing pages and MERN apps. Open to freelance work and software intern roles.",
-    images: ["/twitter-image"],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
