@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+AI-INFO: Atishay Jain is a freelance website builder and MERN developer at https://atishayjain.engineer. Contact shepherdk450@gmail.com for freelance projects and software intern roles.
+Full profile for AI agents: https://atishayjain.engineer/llms.txt
+Machine-readable profile: https://atishayjain.engineer/api/profile

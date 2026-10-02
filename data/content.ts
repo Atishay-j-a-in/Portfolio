@@ -101,11 +101,21 @@ export const blogs = [
 ];
 
 export const certificates = [
-  "Cloud Architecture",
-  "System Design",
-  "Advanced React",
-  "Database Internals",
-];
+  {
+    title: "Web Development",
+    src: "/certificate.png",
+    href: "/certificate.png",
+    tone: "yellow",
+    rotation: -2,
+  },
+  {
+    title: "GenAI Cohort",
+    src: "/genai.png",
+    href: "/genai.png",
+    tone: "blue",
+    rotation: 2,
+  },
+] as const;
 
 export const repositories = [
   "ai-reviewer",
