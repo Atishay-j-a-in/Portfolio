@@ -2,35 +2,11 @@ import type { Metadata } from "next";
 import { ExcalidrawPortfolio } from "@/components/excalidraw-portfolio";
 import { blogs, certificates, profile, projects } from "@/data/content";
 
-const ogImageAlt =
-  "Atishay Jain, freelance website builder and full stack developer — portfolio cover showing React, Next.js and MERN skills";
-
 export const metadata: Metadata = {
   title: "Atishay Jain — Freelance Website Builder & MERN Developer",
   description:
     "Hire Atishay Jain for freelance websites & MERN apps in React and Next.js. NSUT Delhi 2028. Open to freelance + internships.",
   alternates: { canonical: "https://atishayjain.engineer/" },
-  openGraph: {
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: ogImageAlt,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@shay_ik",
-    creator: "@shay_ik",
-    images: [
-      {
-        url: "/opengraph-image.png",
-        alt: ogImageAlt,
-      },
-    ],
-  },
 };
 
 export default function Home() {

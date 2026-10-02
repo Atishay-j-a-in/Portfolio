@@ -136,8 +136,8 @@ export function HeroCharacter({
             id="head-group"
             className="char-head origin-[400px_255px] cursor-pointer"
             onClick={() => setIsWinking((prev) => !prev)}
+            aria-label="Click character to wink!"
           >
-            <title>Click character to wink!</title>
             {/* Neck */}
             <path d="M 388 238 L 388 262 M 412 238 L 412 262" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" />
 
@@ -473,8 +473,8 @@ export function HeroCharacter({
           id="coffee-mug"
           className="cursor-pointer"
           onClick={() => setMugClicks((c) => c + 1)}
+          aria-label="Click the cup of tea for fresh brew!"
         >
-          <title>Click the cup of tea for fresh brew!</title>
           {/* Mug Body resting solidly on table at y=512 */}
           <path
             d="M 648 448 L 702 448 L 698 510 C 698 512, 652 512, 652 510 Z"
