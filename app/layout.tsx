@@ -80,10 +80,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@shay_ik",
+    creator: "@shay_ik",
     title: "Atishay Jain — Freelance Website Builder & MERN Developer",
     description:
       "Freelance websites, landing pages and MERN apps. Open to freelance work and software intern roles.",
-    images: ["/opengraph-image.png"],
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: "Atishay Jain, freelance website builder and full stack developer — portfolio cover showing React, Next.js and MERN skills",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -135,6 +142,7 @@ const jsonLd = {
         "https://github.com/Atishay-j-a-in",
         "https://www.linkedin.com/in/atishay-jain-920326324",
         "https://toddlerstech.hashnode.dev",
+        "https://x.com/shay_ik",
       ],
     },
     {
