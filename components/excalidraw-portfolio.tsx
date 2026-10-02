@@ -9,7 +9,8 @@ import { CertificatesSection } from "@/components/portfolio/sections/certificate
 import { ContactSection } from "@/components/portfolio/sections/contact-section";
 import { LeftToolbar } from "@/components/toolbar/left-toolbar";
 import { TopToolbar } from "@/components/toolbar/top-toolbar";
-import { blogs, certificates, profile, projects, repositories } from "@/data/content";
+import { HeroCharacter } from "@/components/portfolio/hero-character";
+import { profile, projects } from "@/data/content";
 import { useSketchTheme } from "@/lib/sketch/theme";
 
 function CanvasItem({
@@ -67,7 +68,10 @@ function MobileWhiteboard({ theme, onToggleTheme }: { theme: "light" | "dark"; o
       <section className="mobile-hero sketch-mobile-card">
         <p className="font-hand text-2xl text-accent">Hey, I&apos;m</p>
         <h2 className="font-hand text-7xl leading-none text-ink">{profile.name}</h2>
-        <p className="mt-5 text-lg leading-8 text-body">{profile.headline}</p>
+        <div className="my-3 max-w-[280px] mx-auto">
+          <HeroCharacter />
+        </div>
+        <p className="mt-2 text-lg leading-8 text-body">{profile.headline}</p>
         <p className="mt-3 font-hand text-xl text-accent">• {profile.seeking}</p>
       </section>
 

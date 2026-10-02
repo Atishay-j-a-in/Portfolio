@@ -2,7 +2,7 @@ import { SketchAnnotation } from "@/components/ui/sketch/annotation";
 import { SketchBody } from "@/components/ui/sketch/body";
 import { SketchHeading } from "@/components/ui/sketch/heading";
 import { SketchHighlight } from "@/components/sketch/highlight";
-import { SkeletonCoder } from "@/components/portfolio/skeleton-coder";
+import { HeroCharacter } from "@/components/portfolio/hero-character";
 import { profile } from "@/data/content";
 
 export function HeroSection() {
@@ -42,7 +42,7 @@ export function HeroSection() {
 
         <div className="flex items-center justify-center md:col-span-5">
           <div className="w-full p-2">
-            <SkeletonCoder className="h-auto w-full" />
+            <HeroCharacter className="h-auto w-full" />
           </div>
         </div>
       </div>

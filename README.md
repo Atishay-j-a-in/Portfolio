@@ -35,9 +35,9 @@ A hand-drawn, interactive developer portfolio built with **Next.js 16**, **React
 ```text
 portfolio/
 ├── app/
-│   ├── layout.tsx         # Root layout, Excalifont & SVG favicon setup
+│   ├── layout.tsx         # Root layout, Excalifont & favicon setup
 │   ├── page.tsx           # Main Excalidraw Canvas workspace page
-│   ├── icon.svg           # Custom Excalidraw sketch diamond favicon
+│   ├── favicon.ico        # Site favicon
 │   └── ui/page.tsx        # UI showcase page for sketch components
 ├── components/
 │   ├── excalidraw-portfolio.tsx   # Canvas container & section positioning

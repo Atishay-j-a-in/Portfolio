@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="8" fill="#1e1e2e" />
-  <!-- Hand-drawn Excalidraw Sketch Diamond Mark -->
-  <path d="M16 4.5 C16 4.5, 26 14.5, 27.5 16 C29 17.5, 17.5 27.5, 16 27.5 C14.5 27.5, 4.5 17.5, 4.5 16 C4.5 14.5, 14.5 4.5, 16 4.5 Z" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-  <!-- Inner Sketch Accent -->
-  <path d="M16 10 C16 10, 21 15, 21 16 C21 17, 17 21, 16 21 C15 21, 11 17, 11 16 C11 15, 15 10, 16 10 Z" fill="#a78bfa" fill-opacity="0.3" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-</svg>
